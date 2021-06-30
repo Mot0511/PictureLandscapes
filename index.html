@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Picture Langscapes</title>
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+<style media="screen">
+.heading{
+  width: 300px;
+
+}
+.img_bg{
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 70px;
+}
+.text_on_img_bg{
+  position: absolute;
+  top: 130px;
+  left: 15%;
+  color: white;
+  font-size: 50px;
+}
+.content{
+  position: absolute;
+  top: 1150px;
+  left: 30%;
+}
+.img{
+  border: 3px solid black;
+  width: 500px;
+  height: 300px;
+}
+.table_images{
+  position: absolute;
+  left: -200px;
+  height: 1100px;
+}
+.vertical-menu {
+width: 250px; /* Set a width if you like */
+border: 2px solid black;
+}
+
+.vertical-menu a {
+background-color: #eee; /* Grey background color */
+color: black; /* Black text color */
+display: block; /* Make the links appear below each other */
+padding: 12px; /* Add some padding */
+}
+
+.vertical-menu a:hover {
+background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+background-color: #4CAF50; /* Add a green color to the "active/current" link */
+color: white;
+}
+a {
+text-decoration: none;
+color: black;
+}
+a.download {
+font-weight: 700;
+color: white;
+text-decoration: none;
+padding: .8em 1em calc(.8em + 3px);
+border-radius: 3px;
+background: rgb(64,199,129);
+box-shadow: 0 -3px rgb(53,167,110) inset;
+transition: 0.2s;
+position: relative;
+top: 20px;
+left: 2px;
+
+
+}
+a.download:hover { background: rgb(53, 167, 110); }
+a.download:active {
+background: rgb(33,147,90);
+box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.header{
+background: white;
+}
+.a_about_our{
+color: black;
+position: absolute;
+right: 20px;
+top: 20px;
+font-size: 20px;
+}
+.line{
+background: black;
+width: 100%;
+height: 3px;
+position: absolute;
+left: 0px;
+
+}
+
+</style>
+  </head>
+  <body>
+    <div class="header">
+      <h2 class="heading"><a href="index.html">Picture Langscapes</a></h2>
+      <a href="about_our.html" class="a_about_our">About our</a>
+    </div>
+    <div class="line"></div>
+    <img src="img/img_bg.png" alt="" class="img_bg">
+    <h1 class="text_on_img_bg">Beautiful landscapes without copyright</h1>
+
+    <div class="content">
+    <h2>The last added pictures</h2>
+    <center><div class="vertical-menu">
+      <table>
+        <tr>
+          <td><a href="javascript:world_images()">Nature</a></td>
+          <td><a href="javascript:sity_images()">City</a></td>
+          <td><a href="javascript:space_images()">Space</a></td>
+
+        </tr>
+      </table>
+
+    </div></center>
+    <script type="text/javascript">
+    function world_images() {
+      var table_images = document.getElementById('table_images');
+      table_images.innerHTML = '<table class="table_images"><tr><td><img src="img/1.jpg" class="img"><a href="img/1.jpg"  class="download"download="1_1">Download the image</a></td>  <td><img src="img/2.jpg" class="img"><a href="img/1.jpg"  class="download"download="1_2">Download the image</a></td></tr><tr><td><img src="img/3.jpg" class="img"><a href="img/1.jpg"  class="download"download="1_3">Download the image</a></td><td><img src="img/4.jpg" class="img"><a href="img/1.jpg"   class="download"download="1_4">Download the image</a></td></tr><tr>  <td><img src="img/5.jpg" class="img"><a href="img/1.jpg"  class="download"download="1_5">Download the image</a></td><td><img src="img/6.jpg" class="img"><a href="img/1.jpg"  class="download"download="1_5">Download the image</a></td></tr></table>';
+    }
+    function sity_images() {
+      var table_images = document.getElementById('table_images');
+      table_images.innerHTML = '<table class="table_images"><tr><td><img src="img/2_1.jpg" class="img"><a href="img/2_1.jpg" download="2_1" class="download">Download the image</a></td>  <td><img src="img/2_2.jpg" class="img"><a href="img/2_2.jpg"  download="2_2" class="download">Download the image</a></td></tr><tr><td><img src="img/2_3.jpg" class="img"><a href="img/2_3.jpg"  download="2_3" class="download">Download the image</a></td><td><img src="img/2_4.jpg" class="img"><a href="img/2_4.jpg"  download="2_4"  class="download">Download the image</a></td></tr><tr>  <td><img src="img/2_5.jpg" class="img"><a href="img/2_5.jpg"  download="2_5" class="download">Download the image</a></td><td><img src="img/2_6.jpg" class="img"><a href="img/2_6.jpg"  download="2_6" class="download">Download the image</a></td></tr></table>';
+    }
+    function space_images() {
+      var table_images = document.getElementById('table_images');
+      table_images.innerHTML = '<table class="table_images"><tr><td><img src="img/3_1.jpg" class="img"><a href="img/3_1.jpg"  download="3_1" class="download">Download the image</a></td>  <td><img src="img/3_2.jpg" class="img"><a href="img/3_2.jpg"  download="3_2" class="download">Download the image</a></td></tr><tr><td><img src="img/3_3.jpg" class="img"><a href="img/3_3.jpg"  download="3_3" class="download">Download the image</a></td><td><img src="img/3_4.jpg" class="img"><a href="img/3_4.jpg"  download="3_4"  class="download">Download the image</a></td></tr><tr>  <td><img src="img/3_5.jpg" class="img"><a href="img/3_5.jpg"  download="3_5" class="download">Download the image</a></td><td><img src="img/3_6.jpg" class="img"><a href="img/3_6.jpg"  download="3_6" class="download">Download the image</a></td></tr></table>';
+    }
+
+    </script>
+    <div class="table_images" id="table_images">
+      <table class="table_images">
+        <tr>
+          <td><div><img src="img/1.jpg" class="img"><a href="img/1.jpg" download="1" class="download">Download the image</a></div></td>
+          <td><div><img src="img/2.jpg" class="img"><a href="img/2.jpg" download="2"  class="download">Download the image</a></div></td>
+        </tr>
+        <tr>
+          <td><div><img src="img/3.jpg" class="img"><a href="img/3.jpg" download="3" class="download">Download the image</a></div></td>
+          <td><div><img src="img/4.jpg" class="img"><a href="img/4.jpg" download="4" class="download">Download the image</a></div></td>
+
+        </tr>
+        <tr>
+          <td><div><img src="img/5.jpg" class="img"><a href="img/5.jpg" download="5" class="download">Download the image</a></div></td>
+          <td><div><img src="img/6.jpg" class="img"><a href="img/6.jpg" download="6" class="download">Download the image</a></div></td>
+        </tr>
+      </table>
+
+
+
+    </div>
+  </div>
+
+  </body>
+</html>
